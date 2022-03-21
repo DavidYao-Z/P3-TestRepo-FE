@@ -22,7 +22,7 @@ pipeline {
         
         stage ('git checkout') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/DavidYao1995/frontends3test.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/DavidYao-Z/P3-TestRepo-FE.git']]])
             }
         }
 
