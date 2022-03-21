@@ -12,6 +12,7 @@ export const RegisterContent = styled.div`
   top: 0px;
   max-width: 770px;
   margin: 0 auto;
+  font-family: 'Nunito Sans', sans-serif;
   @media only screen and (min-width: 1241px) {
     width: 992px;
     max-width: 100%;
@@ -103,7 +104,7 @@ export const IntroContent = styled.p`
   color: #8e9091;
 `;
 
-export const SignUpFrom = styled.div`
+export const SignUpFrom = styled.form`
   position: relative;
   max-width: 772px;
   margin: 0 auto;
@@ -127,10 +128,11 @@ export const SignUpSection = styled.div`
 
 export const SignUpLabel = styled.label`
   color: #8e9091;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
   display: inline-block;
   max-width: 100%;
+  font-family: 'Nunito Sans', sans-serif;
 `;
 
 export const SignUpInput = styled.input`
@@ -266,8 +268,12 @@ export const CheckText = styled.span`
   font-weight: 300;
 `;
 
-export const SignUpButton = styled(Link)`
+export const SignUpButton = styled.input.attrs({
+  type: 'submit',
+  value: 'Create a new Account',
+})`
   color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
   height: 52px;
   font-size: 17px;
   width: 100%;
